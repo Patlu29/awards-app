@@ -89,6 +89,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
+        <b>gaming</b>
+      </h1>
     </div>
   );
 };

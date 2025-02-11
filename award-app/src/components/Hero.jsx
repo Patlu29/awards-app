@@ -80,7 +80,12 @@ const Hero = () => {
               Enter Into The Virtual World <br />
               Unleash The Domain Of Gaming
             </p>
-            <Button id="watch-trailer" title="Watch Trailer" leftIcon={<TiLocationArrow />} containerClass="!bg-yellow-300 flex-center gap-1"/>
+            <Button
+              id="watch-trailer"
+              title="Watch Trailer"
+              leftIcon={<TiLocationArrow />}
+              containerClass="!bg-yellow-300 flex-center gap-1"
+            />
           </div>
         </div>
       </div>

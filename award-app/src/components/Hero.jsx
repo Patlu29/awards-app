@@ -5,6 +5,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
@@ -64,7 +66,7 @@ const Hero = () => {
     });
 
     gsap.from("#video-frame", {
-      clipPath: "polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%)",
+      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       borderRadius: "0 0 0 0",
       ease: "power1.inOut",
       scrollTrigger: {

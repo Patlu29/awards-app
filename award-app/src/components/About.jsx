@@ -30,7 +30,10 @@ const About = () => {
         <h2 className="font-general text-sm uppercase md:text-[30px]">
           Welcome to kalahari
         </h2>
-        <AnimatedTitle />
+        <AnimatedTitle
+          title="<b>discover</b> <b>the<b/> <b>virtual<b/> <b>world<b/> <b>of<b/> <b>gaming<b/>"
+          containerClass="mt-5 !text-black text-center"
+        />
         <div className="about-subtext">
           <p>The Game of Saving Your Life Is Begins Now</p>
           <p>Kalahari is The Field of a Game With a Countless Players</p>

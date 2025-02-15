@@ -36,7 +36,7 @@ const About = () => {
         />
         <div className="about-subtext">
           <p>The Game of Saving Your Life Is Begins Now</p>
-          <p>Kalahari is The Field of a Game With a Countless Players</p>
+          <p>Kalahari is The Field of a Survival Game With a Countless Players</p>
         </div>
       </div>
       <div className="h-dvh w-screen" id="clip">

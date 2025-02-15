@@ -1,8 +1,13 @@
-import React from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 
 const AnimatedTitle = ({ title, containerClass }) => {
+  const containerRef = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {}, containerRef);
+  }, []);
   return (
-    <div className={`animated-title ${containerClass}`}>
+    <div ref={containerRef} className={`animated-title ${containerClass}`}>
       {title.split("<br />").map((line, index) => (
         <div
           key={index}

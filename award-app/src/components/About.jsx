@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 import { ScrollTrigger } from "gsap/all";
+import AnimatedTitle from "./AnimatedTitle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,6 +31,7 @@ const About = () => {
         <h2 className="font-general text-sm uppercase md:text-[10px]">
           Welcome to Skipiya
         </h2>
+        <AnimatedTitle />
         <div className="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]">
           <b>discover</b> <b>the</b> <b>world's</b> <br /> <b>largest</b>{" "}
           <b>virtual</b> <b>gaming</b>

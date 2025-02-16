@@ -31,8 +31,10 @@ const About = () => {
         <h2 className="font-general text-sm uppercase md:text-[10px]">
           Welcome to Skipiya
         </h2>
-        <AnimatedTitle title="<b>discover</b> <b>the</b> <b>world's</b> <br /> <b>largest</b>{" "}
-      <b>virtual</b> <b>gaming</b>"/>
+        <AnimatedTitle
+          title="<b>discover</b> <b>the</b> <b>world's</b> <br /> <b>largest</b> <b>virtual</b> <b>gaming</b>"
+          containerClass="mt-5 !text-black text-center"
+        />
         <div className="about-subtext">
           <p>The Game of Survival Begins...!</p>
           <p>Skipiya Unites All Players in a Virtual World</p>

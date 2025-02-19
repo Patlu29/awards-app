@@ -3,6 +3,8 @@ import { useRef } from 'react'
 import { TiLocationArrow } from 'react-icons/ti'
 import Button from './Button'
 
+const navItems = ['Nexus', 'Vault', 'Prolog', 'About', 'Contact']
+
 const Navbar = () => {
     const navContainerRef = useRef(null)
 
@@ -12,7 +14,14 @@ const Navbar = () => {
 <nav className='flex size-full items-center justify-between p-4'>
 <div className='flex items-center gap-7'>
 <img src="/img/logo.png" alt="logo" className='w-10'/>
-<Button id='product-button' title='Products' rightIcon={<TiLocationArrow />} containerClass='bg-blue-50 md:flex hidden items-center gap-1 ' />
+<Button id='product-button' title='Products' rightIcon={<TiLocationArrow />} containerClass='bg-blue-50 flex items-center gap-1' />
+</div>
+<div className='flex hfull items-center'>
+<div className='md:flex'>
+    {navItems.map((item, index) => (
+      <a key={index} className='nav-hover-btn' href={`${item.toLowerCase()}`}> {item} </a>
+    ))} 
+</div>
 </div>
 </nav>
 </header>

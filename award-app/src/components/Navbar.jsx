@@ -5,27 +5,26 @@ import Button from "./Button";
 const navItems = ["Nexus", "Vault", "Prolog", "About", "Contact"];
 
 const Navbar = () => {
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false)
-
-  const [isIndicatorActive, setIsIndicatorActive] = useState(false)
+  const [isIndicatorActive, setIsIndicatorActive] = useState(false);
 
   const navContainerRef = useRef(null);
 
-const audioElementRef = useRef(null)
+  const audioElementRef = useRef(null);
 
   const toggleAudioIndicator = () => {
-    setIsAudioPlaying((prev) => !prev
-    )
-    setIsIndicatorActive((prev) => !prev
-    )
-  }
+    setIsAudioPlaying((prev) => !prev);
+    setIsIndicatorActive((prev) => !prev);
+  };
 
-  useEffect(() => {if(isAudioPlaying){
-    audioElementRef.current.play()
-  }else {
-    audioElementRef.current.pause()
-  }}, [isAudioPlaying])
+  useEffect(() => {
+    if (isAudioPlaying) {
+      audioElementRef.current.play();
+    } else {
+      audioElementRef.current.pause();
+    }
+  }, [isAudioPlaying]);
 
   return (
     <div
@@ -56,9 +55,24 @@ const audioElementRef = useRef(null)
                 </a>
               ))}
             </div>
-            <button className="ml-10 flex items-center space-x-0.5" onClick={toggleAudioIndicator}>
-              <audio ref={audioElementRef} className="hidden" src="/audio/loop.mp3" loop />{[1, 2, 3, 4].map((bar) => (
-                <div key={bar} className={`indicator-line ${isIndicatorActive ? 'active' : ''}`} style={{animationDelay: `${bar * 0.1}s`}}/>
+            <button
+              className="ml-10 flex items-center space-x-0.5"
+              onClick={toggleAudioIndicator}
+            >
+              <audio
+                ref={audioElementRef}
+                className="hidden"
+                src="/audio/loop.mp3"
+                loop
+              />
+              {[1, 2, 3, 4].map((bar) => (
+                <div
+                  key={bar}
+                  className={`indicator-line ${
+                    isIndicatorActive ? "active" : ""
+                  }`}
+                  style={{ animationDelay: `${bar * 0.1}s` }}
+                />
               ))}
             </button>
           </div>

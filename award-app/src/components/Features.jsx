@@ -93,11 +93,13 @@ const Features = () => {
             </div>
           </div>
           <div>
-            <video src="/videos/feature-6.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-full object-center" />
+            <video
+              src="/videos/feature-6.mp4"
+              loop
+              muted
+              autoPlay
+              className="size-full object-full object-center"
+            />
           </div>
         </div>
       </div>

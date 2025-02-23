@@ -1,6 +1,6 @@
 import React from "react";
 
-const BentoCard = ({ src, title, description, }) => {
+const BentoCard = ({ src, title, description }) => {
   return (
     <div className="relative size-full">
       <video
@@ -62,13 +62,16 @@ const Features = () => {
             />
           </div>
           <div className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
-<BentoCard 
-src="videos/feature-3.mp4"
-title={<><b>nexus</b></>}
-description="A cross-platform meta game app, turning your activities across Web2 and Web3 games into a rewarding adventure"
-/> 
-</div>
-
+            <BentoCard
+              src="videos/feature-3.mp4"
+              title={
+                <>
+                  <b>nexus</b>
+                </>
+              }
+              description="A cross-platform meta game app, turning your activities across Web2 and Web3 games into a rewarding adventure"
+            />
+          </div>
         </div>
       </div>
     </section>

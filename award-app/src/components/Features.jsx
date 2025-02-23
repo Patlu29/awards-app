@@ -2,13 +2,9 @@ import React, { Children } from "react";
 import { useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
-const BentoTilt = ({children, className=' '}) => {
-  return (
-    <div className={className}>
-      {children}
-    </div>
-  )
-}
+const BentoTilt = ({ children, className = " " }) => {
+  return <div className={className}>{children}</div>;
+};
 
 const BentoCard = ({ src, title, description }) => {
   return (

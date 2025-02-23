@@ -73,12 +73,16 @@ const Features = () => {
             />
           </div>
           <div className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
-<BentoCard 
-src="videos/feature-4.mp4"
-title={<><b>azul</b></>}
-description="A cross-platform meta game app, turning your activities across Web2 and Web3 games into a rewarding adventure"
-/> 
-</div>
+            <BentoCard
+              src="videos/feature-4.mp4"
+              title={
+                <>
+                  <b>azul</b>
+                </>
+              }
+              description="A cross-platform meta game app, turning your activities across Web2 and Web3 games into a rewarding adventure"
+            />
+          </div>
         </div>
       </div>
     </section>

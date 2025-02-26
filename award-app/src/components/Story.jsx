@@ -74,15 +74,6 @@ const Story = () => {
             <RoundedCorners />
           </div>
         </div>
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 text-start">
-              Step into a world beyond imagination, where the boundaries of
-              reality blur and the extraordinary becomes commonplace.
-            </p>
-            <Button id="realm-button" title="Discover sekai" />
-          </div>
-        </div>
       </div>
     </section>
   );
